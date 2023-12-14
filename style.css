@@ -113,8 +113,57 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     height: 100vh;
+}
+
+.tela2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.arrowUp{
+    display: flex;
+    justify-content: flex-end; /* Adiciona esta linha para alinhar à direita */
+    position: absolute; /* Altera de 'flex' para 'absolute' */
+    top: 105vh;
+    left: 87.2vw;
+    font-size: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.arrowUp:hover{
+    transform: scale(1.5);
+}
+
+.arrowUp p{
+    margin: 0;
+}
+
+.arrowUp a{
+    text-decoration: none;
+}
+
+.arrowDown{
+    display: flex;
+    justify-content: flex-end; /* Adiciona esta linha para alinhar à direita */
+    position: absolute; /* Altera de 'flex' para 'absolute' */
+    top: 180vh;
+    left: 87.2vw;
+    font-size: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.arrowDown:hover{
+    transform: scale(1.5);
+}
+
+.arrowDown p{
+    margin: 0;
+}
+
+.arrowDown a{
+    text-decoration: none;
 }
 
 .container3{
@@ -186,6 +235,24 @@ a{
     }    
 }
 
+@media screen and (max-width: 1290px) {
+    .name{
+        font-size: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: white;
+    }
+
+    .name h2{
+        margin: 0px
+    }
+
+    .paragraph{
+        margin-top: -130px;
+    }
+}
 
 .paragraph{
     display: flex;

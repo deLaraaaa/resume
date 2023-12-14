@@ -1,5 +1,5 @@
 const text = "__*W1P...!!!";
-const delay = 150; // Delay in milliseconds
+const delay = 150;
 let index = 0;
 
 function typeText() {
@@ -17,3 +17,12 @@ function typeText() {
 }
 
 typeText();
+
+function copy(that){
+    var inp = document.createElement('input');
+    document.body.appendChild(inp)
+    inp.value = that.textContent
+    inp.select();
+    document.execCommand('copy',false);
+    inp.remove();
+}
